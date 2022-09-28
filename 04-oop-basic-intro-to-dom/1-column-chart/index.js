@@ -1,4 +1,5 @@
 
+
 export default class ColumnChart {
   subElements = {};
   chartHeight = 50;
@@ -11,10 +12,6 @@ export default class ColumnChart {
 
 
       this.render();
-  }
-  getLoadingClass(){
-    const loadingClass = (this.data.length) ? null : 'column-chart_loading';
-    return loadingClass;
   }
   getLink(){
     return this.link
