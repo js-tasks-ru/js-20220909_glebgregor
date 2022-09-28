@@ -1,4 +1,4 @@
-import ColumnChart from '../1-column-chart/index';
+import ColumnChart from '../solution/index';
 
 describe('oop-basic-intro-to-dom/column-chart', () => {
   let columnChart;
