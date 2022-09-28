@@ -1,17 +1,15 @@
-
-
 export default class ColumnChart {
   subElements = {};
   chartHeight = 50;
 
   constructor({data = [], label = '', value = 0, link = '', formatHeading = data => data} = {}){
-      this.data = data;
-      this.label = label;
-      this.value = formatHeading(value);
-      this.link = link;
+    this.data = data;
+    this.label = label;
+    this.value = formatHeading(value);
+    this.link = link;
 
 
-      this.render();
+    this.render();
   }
   getLink(){
     return this.link
