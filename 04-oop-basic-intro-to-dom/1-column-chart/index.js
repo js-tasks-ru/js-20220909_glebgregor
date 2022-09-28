@@ -22,15 +22,7 @@ export default class ColumnChart {
       : "";
   }
 
-  getColumns(data){
-    // return [...arr].map( item =>{
-    //   `<div style="--value: ${arr[item]}"></div>`
-    // })
-    // let result = data.map( (item) =>{
-    //     return `<div style="--value: ${item/2}" data-tooltip="${item}%"></div>`
-    // })
-    // return result.join(' ');
-
+  getColumns(){
     const maxValue = Math.max(...this.data);
     const scale = this.chartHeight / maxValue;
 
@@ -104,4 +96,3 @@ export default class ColumnChart {
   }
 }
 
-//export  const orders = document.querySelector('#root');
