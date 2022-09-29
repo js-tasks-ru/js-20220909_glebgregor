@@ -4,8 +4,6 @@
  * @param {string} [param="asc"] param - the sorting type "asc" or "desc"
  * @returns {string[]}
  */
-import {re} from "@babel/core/lib/vendor/import-meta-resolve";
-
 const compare = (direction) => (a, b) => {
   return (
     direction * a.localeCompare(b, ['ru', 'en'], {sensitivity: 'variant', caseFirst: 'upper' })

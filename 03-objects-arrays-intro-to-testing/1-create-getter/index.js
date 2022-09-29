@@ -5,11 +5,7 @@
  */
 export function createGetter(path) {
   const pathArray = path.split('.')
-  console.log(pathArray)
   return function getter(obj) {
-    // console.log(obj.path)
-    // console.log(obj)
-    // console.log(path)
     let result = obj
     for (let item of pathArray) {
       if (result === undefined) {
